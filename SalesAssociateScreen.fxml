@@ -6,139 +6,127 @@
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="Hello Sales Associate!" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
-    <content>
-        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-            <children>
-                <SplitPane layoutX="117.0" layoutY="59.0" prefHeight="374.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                    <items>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="380.0" prefWidth="420.0">
-                            <children>
-                                <TabPane layoutX="103.0" layoutY="90.0" prefHeight="354.8" prefWidth="388.8" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                    <tabs>
-                                        <Tab text="Load Van">
-                                            <content>
-                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                                                    <children>
-                                                        <SplitPane dividerPositions="0.534610630407911" orientation="VERTICAL" prefHeight="325.6" prefWidth="388.8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                                            <items>
-                                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
-                                                                    <children>
-                                                                        <TableView layoutX="93.0" layoutY="52.0" prefHeight="280.0" prefWidth="386.8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                                                            <columns>
-                                                                                <TableColumn fx:id="sa_load_partName" prefWidth="197.99998784065247" text="Bike Parts" />
-                                                                                <TableColumn fx:id="sa_mainWareHouseQuan" prefWidth="115.19999694824219" text="Warehouse Stock" />
-                                                                                <TableColumn fx:id="sa_vanQuan" prefWidth="73.20001220703125" text="Van Stock" />
-                                                                            </columns>
-                                                                        </TableView>
-                                                                    </children>
-                                                                </AnchorPane>
-                                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
-                                                                    <children>
-                                                                        <SplitPane dividerPositions="0.5015592515592515" layoutX="50.0" layoutY="-10.0" prefHeight="122.8" prefWidth="386.8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                                                            <items>
-                                                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-                                                                                    <children>
-                                                                                        <TextField fx:id="loadPartNameField" layoutX="21.0" layoutY="31.0" text="partname" />
-                                                                                        <TextField fx:id="loadAmountField" layoutX="21.0" layoutY="73.0" text="amount" />
-                                                                                        <Button fx:id="addPartToLoad" layoutX="124.0" layoutY="107.0" mnemonicParsing="false" onAction="#doLoadAdd" text="Add" />
-                                                                                    </children>
-                                                                                </AnchorPane>
-                                                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-                                                                                    <children>
-                                                                                        <TextArea fx:id="loadTextArea" layoutX="-18.0" layoutY="-53.0" prefHeight="83.0" prefWidth="189.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-                                                                                        <Button fx:id="loadVanButton" layoutX="123.0" layoutY="113.0" mnemonicParsing="false" onAction="#doLoadVan" text="load" />
-                                                                                    </children>
-                                                                                </AnchorPane>
-                                                                            </items>
-                                                                        </SplitPane>
-                                                                    </children>
-                                                                </AnchorPane>
-                                                            </items>
-                                                        </SplitPane>
-                                                    </children>
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="Hello Sales Associate!" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project3.LoginController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <SplitPane layoutX="117.0" layoutY="59.0" prefHeight="374.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="380.0" prefWidth="420.0">
+                     <children>
+                        <TabPane layoutX="103.0" layoutY="90.0" prefHeight="354.8" prefWidth="388.8" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <tabs>
+                            <Tab text="Load Van">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="325.6" prefWidth="388.8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <items>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <TextArea fx:id="loadVan" prefHeight="170.0" prefWidth="436.0" />
+                                                      <Button fx:id="genVanButton" layoutX="479.0" layoutY="72.0" mnemonicParsing="false" onAction="#loadVanGenerate" text="Generate" />
+                                                   </children>
                                                 </AnchorPane>
-                                            </content>
-                                        </Tab>
-                                        <Tab text="Sell Product(s)">
-                                            <content>
-                                                <AnchorPane prefHeight="200.0" prefWidth="200.0">
-                                                    <children>
-                                                        <SplitPane dividerPositions="0.5" layoutX="128.0" layoutY="63.0" orientation="VERTICAL" prefHeight="325.6" prefWidth="388.8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                                            <items>
-                                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
-                                                                    <children>
-                                                                        <TableView layoutX="49.0" layoutY="-13.0" prefHeight="159.2" prefWidth="386.8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                                                            <columns>
-                                                                                <TableColumn prefWidth="147.5999481678009" text="Part Name" />
-                                                                                <TableColumn prefWidth="113.2000732421875" text="Part Price" />
-                                                                                <TableColumn prefWidth="125.20001220703125" text="Amount in Van" />
-                                                                            </columns>
-                                                                        </TableView>
-                                                                    </children>
-                                                                </AnchorPane>
-                                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
-                                                                    <children>
-                                                                        <SplitPane dividerPositions="0.5015592515592515" layoutX="105.0" layoutY="-1.0" prefHeight="158.8" prefWidth="386.8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                                                            <items>
-                                                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-                                                                                    <children>
-                                                                                        <TextField fx:id="sellPartNameField" layoutX="14.0" layoutY="52.0" text="Part Name" />
-                                                                                        <TextField fx:id="sellAmountField" layoutX="14.0" layoutY="85.0" text="Amount to sell" />
-                                                                                        <Button fx:id="addPartToSale" layoutX="124.0" layoutY="118.0" mnemonicParsing="false" onAction="#doSellAdd" text="Add" />
-                                                                                    </children>
-                                                                                </AnchorPane>
-                                                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-                                                                                    <children>
-                                                                                        <TextArea fx:id="sellTextArea" layoutY="-22.0" prefHeight="111.0" prefWidth="189.0" AnchorPane.bottomAnchor="46.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-                                                                                        <Button fx:id="sellButton" layoutX="154.0" layoutY="116.0" mnemonicParsing="false" onAction="#doSell" text="Sell" />
-                                                                                        <TextField fx:id="sellDateField" layoutX="5.0" layoutY="116.0" text="Day Sold: dd/MM/yyyy" />
-                                                                                    </children>
-                                                                                </AnchorPane>
-                                                                            </items>
-                                                                        </SplitPane>
-                                                                    </children>
-                                                                </AnchorPane>
-                                                            </items>
-                                                        </SplitPane>
-                                                    </children>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <SplitPane dividerPositions="0.5015592515592515" layoutX="50.0" layoutY="-10.0" prefHeight="122.8" prefWidth="386.8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                        <items>
+                                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                               <children>
+                                                                  <TextField fx:id="loadPartNameField" layoutX="21.0" layoutY="31.0" text="partname" />
+                                                                  <TextField fx:id="loadAmountField" layoutX="21.0" layoutY="73.0" text="amount" />
+                                                                  <Button fx:id="addPartToLoad" layoutX="124.0" layoutY="107.0" mnemonicParsing="false" onAction="#doLoadAdd" text="Add" />
+                                                               </children>
+                                                            </AnchorPane>
+                                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                               <children>
+                                                                  <TextArea fx:id="loadTextArea" layoutX="-18.0" layoutY="-53.0" prefHeight="83.0" prefWidth="189.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                                  <Button fx:id="loadVanButton" layoutX="123.0" layoutY="113.0" mnemonicParsing="false" onAction="#doLoadVan" text="load" />
+                                                               </children>
+                                                            </AnchorPane>
+                                                        </items>
+                                                      </SplitPane>
+                                                   </children>
                                                 </AnchorPane>
-                                            </content>
-                                        </Tab>
-                                        <Tab text="Generate Invoice">
-                                            <content>
-                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                                                    <children>
-                                                        <Text layoutX="94.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date:" />
-                                                        <Text layoutX="94.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Date:" />
-                                                        <ButtonBar layoutX="-1.0" layoutY="272.0" prefHeight="40.0" prefWidth="389.0">
-                                                            <buttons>
-                                                                <Button fx:id="GenerateButton" mnemonicParsing="false" onAction="#doInvoice" prefHeight="25.0" prefWidth="76.0" text="Generate" />
-                                                            </buttons>
-                                                        </ButtonBar>
-                                                        <TextField fx:id="startDate" layoutX="94.0" layoutY="76.0" text="mm/dd/yyyy" />
-                                                        <TextField fx:id="endDate" layoutX="94.0" layoutY="150.0" text="mm/dd/yyyy" />
-                                                    </children>
+                                            </items>
+                                          </SplitPane>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="Sell Product(s)">
+                                 <content>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <SplitPane dividerPositions="0.5" layoutX="128.0" layoutY="63.0" orientation="VERTICAL" prefHeight="325.6" prefWidth="388.8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <items>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <TextArea fx:id="sellProducts" layoutX="7.0" prefHeight="159.0" prefWidth="400.0" />
+                                                      <Button fx:id="generateSellProductButton" layoutX="449.0" layoutY="67.0" mnemonicParsing="false" onAction="#generateSellProduct" text="Generate" />
+                                                   </children>
                                                 </AnchorPane>
-                                            </content>
-                                        </Tab>
-                                    </tabs>
-                                </TabPane>
-                            </children>
-                        </AnchorPane>
-                    </items>
-                    <padding>
-                        <Insets right="20.0" />
-                    </padding>
-                </SplitPane>
-            </children></AnchorPane>
-    </content>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                   <children>
+                                                      <SplitPane dividerPositions="0.5015592515592515" layoutX="105.0" layoutY="-1.0" prefHeight="158.8" prefWidth="386.8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                        <items>
+                                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                               <children>
+                                                                  <TextField fx:id="sellPartNameField" layoutX="14.0" layoutY="52.0" text="Part Name" />
+                                                                  <TextField fx:id="sellAmountField" layoutX="14.0" layoutY="85.0" text="Amount to sell" />
+                                                                  <Button fx:id="addPartToSale" layoutX="124.0" layoutY="118.0" mnemonicParsing="false" onAction="#doSellAdd" text="Add" />
+                                                               </children>
+                                                            </AnchorPane>
+                                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                               <children>
+                                                                  <TextArea fx:id="sellTextArea" layoutY="-22.0" prefHeight="111.0" prefWidth="189.0" AnchorPane.bottomAnchor="46.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                                  <Button fx:id="sellButton" layoutX="154.0" layoutY="116.0" mnemonicParsing="false" onAction="#doSell" text="Sell" />
+                                                                  <TextField fx:id="sellDateField" layoutX="5.0" layoutY="116.0" text="Day Sold: dd/MM/yyyy" />
+                                                               </children>
+                                                            </AnchorPane>
+                                                        </items>
+                                                      </SplitPane>
+                                                   </children>
+                                                </AnchorPane>
+                                            </items>
+                                          </SplitPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                            </Tab>
+                              <Tab text="Generate Invoice">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Text layoutX="94.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date:" />
+                                          <Text layoutX="94.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Date:" />
+                                          <ButtonBar layoutX="-1.0" layoutY="272.0" prefHeight="40.0" prefWidth="389.0">
+                                            <buttons>
+                                              <Button fx:id="GenerateButton" mnemonicParsing="false" onAction="#doInvoice" prefHeight="25.0" prefWidth="76.0" text="Generate" />
+                                            </buttons>
+                                          </ButtonBar>
+                                          <TextField fx:id="startDate" layoutX="94.0" layoutY="76.0" text="mm/dd/yyyy" />
+                                          <TextField fx:id="endDate" layoutX="94.0" layoutY="150.0" text="mm/dd/yyyy" />
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+              </items>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </SplitPane>
+         </children></AnchorPane>
+  </content>
 </TitledPane>
