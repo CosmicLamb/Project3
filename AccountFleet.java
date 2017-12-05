@@ -84,18 +84,23 @@ public class AccountFleet {
         return exists;
     }
 
-    public void removeAccount(Account account) {
-        Scanner remove = new Scanner(System.in);
-        System.out.println("Enter account user name");
-        String removes = remove.next();
-        Iterator accounts = accountFleet.iterator();
+   public void removeAccount(Account account) {
+     
+        Iterator accounts = accountFleet.iterator();        
         while (accounts.hasNext()) {
-            if (account.userName.equals(removes)) {
-                accountFleet.remove(account);
+//            System.out.println(accounts.next());
+          
+         for(int i = 0;  i< accountFleet.size(); i++){
+          if (account.getUserName().equals(accountFleet.get(i).getUserName())) {
+                accountFleet.remove(i);
+                
             }
+         }
 
-        }
+        
     }
+   }
+
 
 
     public void addAccount(Account account){
